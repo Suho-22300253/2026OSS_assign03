@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>학생 추가</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+여
+
+<body>
+
+    <header>
+        <h1>학생 추가</h1>
+    </header>
+
+    <main>
+
+        <form> <!-- 사용자가 입력하는 여러 데이터를 하나의 입력 양식으로 묶는 태그 -->
+
+            <!--
+                form-label → label을 Bootstrap Form 스타일로 정리
+                form-control → input을 Bootstrap 스타일 입력창으로 만듦
+                mb-3 → 각 입력 항목 아래에 margin을 줘서 서로 붙지 않게 함
+            -->
+
+            <div class="mb-3">
+                <label for="studentId" class="form-label">학번</label>
+                <input type="text" id="studentId" class="form-control">
+            </div>
+            
+
+            <div class=""mb3>
+                <label for="name" class = "form-label">이름</label>
+                <!--for이 없으면 label과 특정 input이 명시적으로 연결되지 않음 for 가 있을 경우 학번을 클릭해도 입력창에 커서가 들어감-->
+                <input type="text" id="name" class ="form-control">
+            </div>
+
+            <div class=""mb3>
+                <label for="major" class = "form-label">전공</label>
+                <input type="text" id="major" class = "form-control">
+            </div>
+
+            <div class=""mb3>
+                <label for="semester" class ="form-label">학기</label>
+                <input type="number" id="semester" class = "form-control">
+            </div>
+
+            <div class=""mb3>
+                <label for="email" class ="form-label">이메일</label>
+                <input type="email" id="email" class = "form-control">
+            </div>
+
+            <div class=""mb3>
+                <label for="phone" class ="form-label">전화번호</label>
+                <input type="tel" id="phone" class = "form-control">
+            </div>
+
+            <button type="submit" class = "btn btn-outline-secondary">학생 추가</button>
+
+            <a href="index.html">목록으로</a>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
