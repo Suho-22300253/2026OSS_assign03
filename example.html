@@ -1,0 +1,325 @@
+<!-- Bootstrap 예제 따라 만든 페이지 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--이거 덕분에 bootstrap 다자인 기능을 가져올 수 있음-->
+</head>
+
+<body>
+    <header class="bg-dark text-white"> <!--bg = background : dark / text = white-->
+        <div class="container py-3"> <!-- contatiner = 왼쪽에 안 붙게 만든다. py = padding top, bottom 에 3만큼-->
+            <h4 class="mb-0">Album</h4>
+            <!-- margin bottom 0 / Bootstrap을 불러온 상태에서는 h1~h6에 기본적으로 위쪽 margin은 0, 아래쪽 margin은 조금 들어감-->
+        </div>
+    </header>
+    <main>
+
+        <div class="container text-center py-5">
+            <h1>Album example</h1>
+            <!-- lead 는 보통 제목이 아니라 소개 문단을 강조할 때: 설명 문장을 조금 크게 -->
+            <!--text-body-secondary = 설명 문장을 덜 강조-->
+            <!--w-50 = 부모 요소 너비의 50%만 사용-->
+            <!--mx-auto = 좌우 margin을 auto로 해서 가운데 배치-->
+
+            <p class="lead text-body-secondary w-50 mx-auto">
+                Something short and leading about the collection below—its contents, the creator, etc. Make it short and
+                sweet, but not too short so folks don’t simply skip over it entirely.
+            </p>
+        </div>
+
+        <div id="second-part" class="bg-body-tertiary py-5">
+
+            <div class="container">
+                <div class="row g-3">
+                    <!--row를 3개 만들 필요는 없어. 지금 있는 하나의 row 안에 col-md-4를 총 9개 넣으면 Bootstrap이 알아서 3개씩 다음 줄로 넘겨줌 한줄이 12줄이어서-->
+                    <div class="col-md-4"> <!-- 화면이 md 이상일 때 12칸 중 4칸을 차지한다 -->
+                        <div class="picture-contents card">
+
+                            <div class="picture bg-secondary text-white text-center py-5">
+                                Thumbnail
+                            </div>
+
+                            <div class="card-body">
+                                <div class="picture-explain">
+                                    This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This
+                                    content is a little bit longer.
+                                </div>
+
+                                <!--d-flex : d = display flex = flexbox-->
+                                <!--justify-content-between : 양쪽 끝으로 벌려줌-->
+                                <!--align-items-center : 세로 기준으로 가운데 정렬해줘. 그래서 버튼과 9 mins의 높이가 조금 달라도 한 줄이 자연스럽게 맞음-->
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <div class="picture-menu">
+                                        <button class="btn btn-outline-secondary">View</button>
+                                        <button class="btn btn-outline-secondary">Edit</button>
+                                    </div>
+
+                                    <div class="picture-time">
+                                        9 mins
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="picture-contents card">
+
+                            <div class="picture bg-secondary text-white text-center py-5">
+                                Thumbnail
+                            </div>
+
+                            <div class="card-body">
+                                <div class="picture-explain">
+                                    This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This
+                                    content is a little bit longer.
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <div class="picture-menu">
+                                        <button class="btn btn-outline-secondary">View</button>
+                                        <button class="btn btn-outline-secondary">Edit</button>
+                                    </div>
+
+                                    <div class="picture-time">
+                                        9 mins
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="picture-contents card">
+
+                            <div class="picture bg-secondary text-white text-center py-5">
+                                Thumbnail
+                            </div>
+
+                            <div class="card-body">
+                                <div class="picture-explain">
+                                    This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This
+                                    content is a little bit longer.
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <div class="picture-menu">
+                                        <button class="btn btn-outline-secondary">View</button>
+                                        <button class="btn btn-outline-secondary">Edit</button>
+                                    </div>
+
+                                    <div class="picture-time">
+                                        9 mins
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="picture-contents card">
+
+                            <div class="picture bg-secondary text-white text-center py-5">
+                                Thumbnail
+                            </div>
+
+                            <div class="card-body">
+                                <div class="picture-explain">
+                                    This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This
+                                    content is a little bit longer.
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <div class="picture-menu">
+                                        <button class="btn btn-outline-secondary">View</button>
+                                        <button class="btn btn-outline-secondary">Edit</button>
+                                    </div>
+
+                                    <div class="picture-time">
+                                        9 mins
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="picture-contents card">
+
+                            <div class="picture bg-secondary text-white text-center py-5">
+                                Thumbnail
+                            </div>
+
+                            <div class="card-body">
+                                <div class="picture-explain">
+                                    This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This
+                                    content is a little bit longer.
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <div class="picture-menu">
+                                        <button class="btn btn-outline-secondary">View</button>
+                                        <button class="btn btn-outline-secondary">Edit</button>
+                                    </div>
+
+                                    <div class="picture-time">
+                                        9 mins
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="picture-contents card">
+
+                            <div class="picture bg-secondary text-white text-center py-5">
+                                Thumbnail
+                            </div>
+
+                            <div class="card-body">
+                                <div class="picture-explain">
+                                    This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This
+                                    content is a little bit longer.
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <div class="picture-menu">
+                                        <button class="btn btn-outline-secondary">View</button>
+                                        <button class="btn btn-outline-secondary">Edit</button>
+                                    </div>
+
+                                    <div class="picture-time">
+                                        9 mins
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="picture-contents card">
+
+                            <div class="picture bg-secondary text-white text-center py-5">
+                                Thumbnail
+                            </div>
+
+                            <div class="card-body">
+                                <div class="picture-explain">
+                                    This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This
+                                    content is a little bit longer.
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <div class="picture-menu">
+                                        <button class="btn btn-outline-secondary">View</button>
+                                        <button class="btn btn-outline-secondary">Edit</button>
+                                    </div>
+
+                                    <div class="picture-time">
+                                        9 mins
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="picture-contents card">
+
+                            <div class="picture bg-secondary text-white text-center py-5">
+                                Thumbnail
+                            </div>
+
+                            <div class="card-body">
+                                <div class="picture-explain">
+                                    This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This
+                                    content is a little bit longer.
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <div class="picture-menu">
+                                        <button class="btn btn-outline-secondary">View</button>
+                                        <button class="btn btn-outline-secondary">Edit</button>
+                                    </div>
+
+                                    <div class="picture-time">
+                                        9 mins
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="picture-contents card">
+
+                            <div class="picture bg-secondary text-white text-center py-5">
+                                Thumbnail
+                            </div>
+
+                            <div class="card-body">
+                                <div class="picture-explain">
+                                    This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This
+                                    content is a little bit longer.
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <div class="picture-menu">
+                                        <button class="btn btn-outline-secondary">View</button>
+                                        <button class="btn btn-outline-secondary">Edit</button>
+                                    </div>
+
+                                    <div class="picture-time">
+                                        9 mins
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container py-5">
+
+            <a href="#" class="float-end">Back to top</a> <!--float-end는 말 그대로 해당 요소를 끝쪽(end), 즉 현재 영어 문서에서는 오른쪽으로 보내는 class-->
+            <p class=" text-body-secondary">
+                Album example is © Bootstrap...
+            </p>
+
+            <p class="text-body-secondary">
+                New to Bootstrap? ...
+            </p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
