@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학생 정보 수정</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class ="bg-dark">
+        <div class ="container py-3">
+            <h1 class ="text-white mb-0">학생 정보 수정</h1>
+        </div>
+    </header>
+
+    <main class ="container py-5">
+        <div class="col-12 col-md-8 col-lg-6 mx-auto">
+            <!-- form
+             사용자로부터 정보(데이터)를 입력받아 서버로 전송하기 위한 양식 구획을 정의할 때 사용합니다. 
+            로그인, 회원가입, 검색, 게시글 작성 등 사용자가 웹사이트에 무언가를 입력하고 제출(Submit)하는 상호작용의 기본 단위
+            -->
+            <form>
+
+                <div class="py-1 mb-3">
+                    <label for="studentId" class="form-label">학번</label>
+                    <input type="text" id="studentId" class="form-control bg-light" value="22300253">
+                </div>
+
+
+                <div class="py-1 mb-3">
+                    <label for="name" class="form-label">이름</label>
+                    <input type="text" id="name" class="form-control bg-light" value="명수호">
+                </div>
+
+                <div class="py-1 mb-3">
+                    <label for="department" class="form-label">학부</label>
+
+                    <select id="department" class="form-select bg-light"> <!--Bootstrap이 제공하는 select 디자인-->
+                        <option value="" disabled>학부를 선택하세요</option>
+                        <option value="global">글로벌리더십</option>
+                        <option value="language">국제어문</option>
+                        <option value="business">경영경제</option>
+                        <option value="law">법학부</option>
+                        <option value="communication">커뮤니케이션</option>
+                        <option value="counseling">상담심리사회복지</option>
+                        <option value="life-science">생명과학</option>
+                        <option value="spatial-environment">공간환경시스템</option>
+                        <option value="ai-computer-electronics" selected>AI컴퓨터전자</option>
+                        <option value="contents-design">콘텐츠융합디자인</option>
+                        <option value="mechanical-control">기계제어</option>
+                        <option value="language-education">언어교육원</option>
+                        <option value="creative-education">창의융합교육원</option>
+                        <option value="ict">ICT창업학부</option>
+                        <option value="ai-education">AI융합교육원</option>
+                        <option value="ai-convergence">AI융합학부(신설)</option>
+                    </select>
+                </div>
+
+                <div class="py-1 mb-3">
+                    <label for="semester" class="form-label">학기</label>
+                    <input type="number" id="semester" class="form-control bg-light" value="4">
+                </div>
+
+                <div class="py-1 mb-3">
+                    <label for="email" class="form-label">이메일</label>
+                    <input type="email" id="email" class="form-control bg-light" value="12345@naver.com">
+                </div>
+
+                <div class="py-1 mb-3">
+                    <label for="phone" class="form-label">전화번호</label>
+                    <input type="tel" id="phone" class="form-control  bg-light" value="010-1234-5678">
+                </div>
+
+
+                <div>
+
+                    <button type="submit" class="btn btn-dark">
+                        수정
+                    </button>
+                </div>
+
+
+            </form>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
