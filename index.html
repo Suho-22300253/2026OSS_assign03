@@ -12,9 +12,9 @@
 
 </head>
 
-<body>
+<body  class="d-flex flex-column min-vh-100">
 
-    <header class="bg-dark text-white py-5">
+    <header class="bg-dark text-white py-3">
 
         <div class="container">
 
@@ -28,7 +28,11 @@
                     </p>
                 </div>
 
-                <a href="add.html" class="btn btn-light">
+                <!--
+                text-nowrap → 학생 추가를 줄바꿈하지 않음
+                flex-shrink-0 → Flexbox 안에서 버튼 폭이 강제로 줄어들지 않게 함
+                -->
+                <a href="add.html" class="btn btn-light text-nowrap flex-shrink-0">
                     학생 추가
                 </a>
 
@@ -38,7 +42,7 @@
 
     </header>
 
-    <main class="container py-5">
+    <main class="container py-5 flex-grow-1">
         <!--table-responsive : 화면이 좁아서 표가 다 안 들어가면, 표를 억지로 찌그러뜨리지 않고 가로 스크롤로 볼 수 있게 해준-->
         <div class="table-responsive">
             <!--table : Bootstrap의 기본 표 스타일을 적용 -->
@@ -89,8 +93,11 @@
 
     </main>
 
-    <footer>
-
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-1">OSS Student Management</p>
+            <p class="text-white-50 mb-0">Open Source Studio · 2026</p>
+        </div>
     </footer>
 
 </body>

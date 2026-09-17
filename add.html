@@ -11,15 +11,15 @@
 </head>
 
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-    <header class="py-3 bg-dark text-white">
+    <header class="bg-dark text-white py-3">
         <div class="container">
             <h1 class="mb-0">학생 추가</h1>
         </div>
     </header>
 
-    <main class="container py-5">
+    <main class="container py-5 flex-grow-1">
         <!--
         row → Bootstrap Grid의 한 줄
         
@@ -34,82 +34,88 @@
 
         <div class="row justify-content-center">
 
-            
-                <form> <!-- 사용자가 입력하는 여러 데이터를 하나의 입력 양식으로 묶는 태그 -->
 
-                    <!--
+            <form> <!-- 사용자가 입력하는 여러 데이터를 하나의 입력 양식으로 묶는 태그 -->
+
+                <!--
                         form-label → label을 Bootstrap Form 스타일로 정리
                         form-control → input을 Bootstrap 스타일 입력창으로 만듦
                         mb-3 → 각 입력 항목 아래에 margin을 줘서 서로 붙지 않게 함
                     -->
 
-                    <div class="py-1 mb-3">
-                        <label for="studentId" class="form-label">학번</label>
-                        <input type="text" id="studentId" class="form-control bg-light">
-                    </div>
+                <div class="py-1 mb-3">
+                    <label for="studentId" class="form-label">학번</label>
+                    <input type="text" id="studentId" class="form-control bg-light">
+                </div>
 
 
-                    <div class="py-1 mb-3">
-                        <label for="name" class="form-label">이름</label>
-                        <!--for이 없으면 label과 특정 input이 명시적으로 연결되지 않음 for 가 있을 경우 학번을 클릭해도 입력창에 커서가 들어감-->
-                        <input type="text" id="name" class="form-control bg-light">
-                    </div>
+                <div class="py-1 mb-3">
+                    <label for="name" class="form-label">이름</label>
+                    <!--for이 없으면 label과 특정 input이 명시적으로 연결되지 않음 for 가 있을 경우 학번을 클릭해도 입력창에 커서가 들어감-->
+                    <input type="text" id="name" class="form-control bg-light">
+                </div>
 
-                    <div class="py-1 mb-3">
-                        <label for="department" class="form-label">학부</label>
+                <div class="py-1 mb-3">
+                    <label for="department" class="form-label">학부</label>
 
-                        <select id="department" class="form-select bg-light"> <!--Bootstrap이 제공하는 select 디자인-->
-                            <option value="" selected disabled>학부를 선택하세요</option>
-                            <option value="global">글로벌리더십</option>
-                            <option value="language">국제어문</option>
-                            <option value="business">경영경제</option>
-                            <option value="law">법학부</option>
-                            <option value="communication">커뮤니케이션</option>
-                            <option value="counseling">상담심리사회복지</option>
-                            <option value="life-science">생명과학</option>
-                            <option value="spatial-environment">공간환경시스템</option>
-                            <option value="ai-computer-electronics">AI컴퓨터전자</option>
-                            <option value="contents-design">콘텐츠융합디자인</option>
-                            <option value="mechanical-control">기계제어</option>
-                            <option value="language-education">언어교육원</option>
-                            <option value="creative-education">창의융합교육원</option>
-                            <option value="ict">ICT창업학부</option>
-                            <option value="ai-education">AI융합교육원</option>
-                            <option value="ai-convergence">AI융합학부(신설)</option>
-                        </select>
-                    </div>
+                    <select id="department" class="form-select bg-light"> <!--Bootstrap이 제공하는 select 디자인-->
+                        <option value="" selected disabled>학부를 선택하세요</option>
+                        <option value="global">글로벌리더십</option>
+                        <option value="language">국제어문</option>
+                        <option value="business">경영경제</option>
+                        <option value="law">법학부</option>
+                        <option value="communication">커뮤니케이션</option>
+                        <option value="counseling">상담심리사회복지</option>
+                        <option value="life-science">생명과학</option>
+                        <option value="spatial-environment">공간환경시스템</option>
+                        <option value="ai-computer-electronics">AI컴퓨터전자</option>
+                        <option value="contents-design">콘텐츠융합디자인</option>
+                        <option value="mechanical-control">기계제어</option>
+                        <option value="language-education">언어교육원</option>
+                        <option value="creative-education">창의융합교육원</option>
+                        <option value="ict">ICT창업학부</option>
+                        <option value="ai-education">AI융합교육원</option>
+                        <option value="ai-convergence">AI융합학부(신설)</option>
+                    </select>
+                </div>
 
-                    <div class="py-1 mb-3">
-                        <label for="semester" class="form-label">학기</label>
-                        <input type="number" id="semester" class="form-control  bg-light">
-                    </div>
+                <div class="py-1 mb-3">
+                    <label for="semester" class="form-label">학기</label>
+                    <input type="number" id="semester" class="form-control  bg-light">
+                </div>
 
-                    <div class="py-1 mb-3">
-                        <label for="email" class="form-label">이메일</label>
-                        <input type="email" id="email" class="form-control bg-light">
-                    </div>
+                <div class="py-1 mb-3">
+                    <label for="email" class="form-label">이메일</label>
+                    <input type="email" id="email" class="form-control bg-light">
+                </div>
 
-                    <div class="py-1 mb-3">
-                        <label for="phone" class="form-label">전화번호</label>
-                        <input type="tel" id="phone" class="form-control  bg-light">
-                    </div>
+                <div class="py-1 mb-3">
+                    <label for="phone" class="form-label">전화번호</label>
+                    <input type="tel" id="phone" class="form-control  bg-light">
+                </div>
 
 
-                    <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center">
 
-                        <button type="submit" class="btn btn btn-outline-dark">학생 추가</button>
+                    <button type="submit" class="btn btn btn-outline-dark">학생 추가</button>
 
-                        <a href="index.html" class="btn btn-dark">학생 목록 보기</a>
-                        <!--btn에 기본적으로 hover가 들어가 있어 마우스가 위로 올라가면 색깔이 바뀜-->
-                        <!--div는 block으로 -->
+                    <a href="index.html" class="btn btn-dark">학생 목록 보기</a>
+                    <!--btn에 기본적으로 hover가 들어가 있어 마우스가 위로 올라가면 색깔이 바뀜-->
+                    <!--div는 block으로 -->
 
-                    </div>
+                </div>
 
-                </form>
-            </div>
+            </form>
+        </div>
         </div>
 
     </main>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-1">OSS Student Management</p>
+            <p class="text-white-50 mb-0">Open Source Studio · 2026</p>
+        </div>
+    </footer>
 
 </body>
 
