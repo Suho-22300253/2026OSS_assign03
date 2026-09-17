@@ -9,14 +9,14 @@
 
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header class="bg-dark text-white py-3">
         <div class="container">
             <h1 class="mb-0">학생 상세 정보 조회</h1>
         </div>
     </header>
 
-    <main class="container py-3">
+    <main class="container py-3 flex-grow-1">
 
         <div class="row mb-2 py-2 border-bottom">
 
@@ -46,7 +46,7 @@
 
         </div>
 
-       <div class="row mb-2 py-2 border-bottom">
+        <div class="row mb-2 py-2 border-bottom">
             <div class="col-3">
                 <strong>학기</strong>
             </div>
@@ -74,7 +74,7 @@
             <div class="d-flex justify-content-between align-items-center mt-4">
                 <div>
                     <a href="edit.html" class="btn-dark btn">수정</a>
-                    <botton type ="button" class="btn btn-dark">삭제</botton>
+                    <botton type="button" class="btn btn-dark">삭제</botton>
                 </div>
                 <a href="index.html" class="btn btn-outline-dark">전체 목록 조회</a>
             </div>
@@ -82,8 +82,11 @@
         </div>
 
     </main>
-    <footer>
-
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-1">OSS Student Management</p>
+            <p class="text-white-50 mb-0">Open Source Studio · 2026</p>
+        </div>
     </footer>
 </body>
 
